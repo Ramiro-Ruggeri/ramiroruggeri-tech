@@ -1,0 +1,32 @@
+// =============================================================
+// 05-ORGANISMS / _section.scss
+// =============================================================
+@use '../01-tokens/typography' as t;
+
+.section {
+  padding: 6rem 0;
+  border-top: 1px solid var(--c-border);
+
+  &__head { margin-bottom: 3rem; }
+
+  &__title {
+    font-size: t.$fs-h2;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .section { padding: 4rem 0; }
+}
+
+// =============================================================
+// 05-ORGANISMS / _footer.scss
+// =============================================================
+
+.footer {
+  padding: 3rem 0 6rem;
+  border-top: 1px solid var(--c-border);
+  color: var(--c-text-mute);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}

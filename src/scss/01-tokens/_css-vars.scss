@@ -1,0 +1,40 @@
+// =============================================================
+// 01-TOKENS / _css-vars.scss
+// Expone tokens como custom properties para que el theme toggle
+// pueda cambiarlos en runtime sin recompilar Sass.
+// =============================================================
+@use 'variables' as v;
+@use 'typography' as t;
+
+:root {
+  // colors
+  --c-bg:        #{v.$c-bg};
+  --c-surface:   #{v.$c-surface};
+  --c-surface-2: #{v.$c-surface-2};
+  --c-border:    #{v.$c-border};
+  --c-text:      #{v.$c-text};
+  --c-text-dim:  #{v.$c-text-dim};
+  --c-text-mute: #{v.$c-text-mute};
+  --c-accent:    #{v.$c-accent};
+  --c-accent-dim:#{v.$c-accent-dim};
+
+  // type
+  --font-sans: #{t.$font-sans};
+  --font-mono: #{t.$font-mono};
+
+  // motion
+  --transition: #{v.$transition};
+}
+
+// ---- LIGHT THEME OVERRIDE ----
+[data-theme='light'] {
+  --c-bg:        #fbfbfb;
+  --c-surface:   #ffffff;
+  --c-surface-2: #f2f3f5;
+  --c-border:    #e2e4e8;
+  --c-text:      #16181d;
+  --c-text-dim:  #5a6069;
+  --c-text-mute: #969ba3;
+  --c-accent:    #2d5bff;
+  --c-accent-dim:#a8bdff;
+}

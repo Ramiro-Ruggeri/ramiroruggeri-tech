@@ -1,0 +1,81 @@
+// =============================================================
+// 05-ORGANISMS / _hero.scss
+// =============================================================
+@use '../01-tokens/typography' as t;
+
+.hero {
+  padding: 6rem 0 4rem;
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  &__photo {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--c-border);
+    flex: none;
+  }
+
+  &__title {
+    font-size: t.$fs-display;
+    margin: 1.5rem 0 0.75rem;
+    max-width: 18ch;
+
+    .accent {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+      font-weight: 500;
+      font-family: var(--font-mono);
+      letter-spacing: 0;
+      color: var(--c-text-dim);
+      text-transform: none;
+    }
+  }
+
+  &__lead {
+    font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+    color: var(--c-text-dim);
+    line-height: 1.35;
+    max-width: 56ch;
+    margin-bottom: 2rem;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__cta {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--c-bg);
+    background: var(--c-accent);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: opacity var(--transition);
+
+    &:hover { opacity: 0.88; }
+  }
+
+  &__ghost {
+    font-size: 0.875rem;
+    color: var(--c-text-dim);
+    transition: color var(--transition);
+
+    &:hover { color: var(--c-text); }
+  }
+}
+
+@media (max-width: 560px) {
+  .hero { padding: 4rem 0 3rem; }
+}
+

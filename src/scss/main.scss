@@ -1,0 +1,28 @@
+// =============================================================
+// main.scss — ATOMIC DESIGN ENTRY
+// Orden:  vendor (tokens + bootstrap) → css-vars → base → atoms
+//         → molecules → organisms → template
+// =============================================================
+
+@use 'vendor';
+@use '01-tokens/css-vars';
+@use '02-base/globals';
+
+// atoms
+@use '03-atoms/tag';
+@use '03-atoms/link';
+@use '03-atoms/icon-btn';
+
+// molecules
+@use '04-molecules/nav';
+@use '04-molecules/skill-card';
+@use '04-molecules/project';
+@use '04-molecules/xp';
+@use '04-molecules/stack-group';
+
+// organisms
+@use '05-organisms/hero';
+@use '05-organisms/section';
+
+// template
+@use '06-template/layout';

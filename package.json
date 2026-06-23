@@ -1,0 +1,42 @@
+{
+  "name": "ramiroruggeri-tech",
+  "version": "1.0.0",
+  "description": "Portfolio profesional de Ramiro Ruggeri",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "start": "NODE_ENV=production node server/index.js",
+    "pm2:start": "pm2 start server/ecosystem.config.cjs",
+    "pm2:reload": "pm2 reload ramiroruggeri",
+    "pm2:logs": "pm2 logs ramiroruggeri",
+    "lint": "eslint \"src/**/*.js\" \"server/**/*.js\"",
+    "lint:fix": "eslint \"src/**/*.js\" \"server/**/*.js\" --fix",
+    "format": "prettier --write \"**/*.{js,scss,html,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,scss,html,json,md}\""
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.1",
+    "bootstrap": "^5.3.3",
+    "compression": "^1.7.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "nodemailer": "^6.9.15"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.80.4",
+    "vite": "^5.4.10"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,20 @@
+// =============================================================
+// 03-ATOMS / _link.scss
+// =============================================================
+
+.link {
+  color: var(--c-accent);
+  transition: color var(--transition);
+
+  &:hover {
+    color: var(--c-text);
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-text-mute);
+}

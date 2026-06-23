@@ -1,0 +1,30 @@
+// =============================================================
+// 04-MOLECULES / _nav.scss
+// =============================================================
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background: color-mix(in srgb, var(--c-bg) 85%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--c-border);
+
+  &__name {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+
+    .dot { color: var(--c-accent); }
+  }
+
+  &__controls {
+    display: flex;
+    gap: 0.5rem;
+  }
+}

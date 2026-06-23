@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramiro Ruggeri — Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Ramiro Ruggeri — Full Stack Developer con foco en backend, datos y QA. Python, SQL, sistemas de negocio e integraciones ARCA/AFIP."
+    />
+    <meta name="author" content="Ramiro Ruggeri" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ramiro Ruggeri — Full Stack Developer" />
+    <meta property="og:description" content="Backend, datos y QA." />
+    <meta property="og:url" content="https://ramiroruggeri.tech" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ramiro Ruggeri",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://ramiroruggeri.tech",
+        "email": "ramirorruggeri@gmail.com",
+        "sameAs": [
+          "https://github.com/Ramiro-Ruggeri",
+          "https://linkedin.com/in/ramiro-ruggeri-a16324224"
+        ],
+        "address": { "@type": "PostalAddress", "addressLocality": "Córdoba", "addressCountry": "AR" }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- ============ NAV ============ -->
+      <nav class="nav" aria-label="Main">
+        <span class="nav__name">ramiro<span class="dot">.</span>ruggeri</span>
+        <div class="nav__controls">
+          <button class="icon-btn" x-data @click="$store.i18n.toggle()" x-text="$store.i18n.lang === 'es' ? 'EN' : 'ES'" aria-label="Switch language"></button>
+          <button class="icon-btn" x-data @click="$store.theme.toggle()" x-text="$store.theme.mode === 'dark' ? '☀' : '☾'" aria-label="Switch theme"></button>
+        </div>
+      </nav>
+
+      <!-- ============ HERO ============ -->
+      <header class="hero" x-data>
+        <div class="hero__top">
+          <img class="hero__photo" src="/foto.jpg" alt="Ramiro Ruggeri" onerror="this.style.display='none'" />
+          <p class="eyebrow" x-text="$store.i18n.t('hero.eyebrow')"></p>
+        </div>
+
+        <h1 class="hero__title">
+          <span x-text="$store.i18n.t('hero.title_1')"></span><br />
+          <span class="accent" x-text="$store.i18n.t('hero.title_2')"></span>
+        </h1>
+
+        <p class="hero__lead" x-text="$store.i18n.t('hero.lead')"></p>
+
+        <div class="hero__actions">
+          <a class="hero__cta" href="#contacto" x-text="$store.i18n.t('hero.cta')"></a>
+          <a class="hero__ghost link" href="https://github.com/Ramiro-Ruggeri" target="_blank" rel="noopener" x-text="$store.i18n.t('hero.github')"></a>
+          <a class="hero__ghost link" href="/cv-ramiro-ruggeri.pdf" x-text="$store.i18n.t('hero.cv')"></a>
+        </div>
+      </header>
+
+      <!-- ============ HIGH-VALUE SKILLS ============ -->
+      <section class="section" id="skills" x-data>
+        <div class="section__head">
+          <p class="eyebrow" x-text="$store.i18n.t('skills.eyebrow')"></p>
+          <h2 class="section__title" x-text="$store.i18n.t('skills.title')"></h2>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-12 col-sm-6">
+            <article class="skill-card">
+              <h3 class="skill-card__title" x-text="$store.i18n.t('skills.python_t')"></h3>
+              <p class="skill-card__desc" x-text="$store.i18n.t('skills.python_d')"></p>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6">
+            <article class="skill-card">
+              <h3 class="skill-card__title" x-text="$store.i18n.t('skills.data_t')"></h3>
+              <p class="skill-card__desc" x-text="$store.i18n.t('skills.data_d')"></p>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6">
+            <article class="skill-card">
+              <h3 class="skill-card__title" x-text="$store.i18n.t('skills.qa_t')"></h3>
+              <p class="skill-card__desc" x-text="$store.i18n.t('skills.qa_d')"></p>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6">
+            <article class="skill-card">
+              <h3 class="skill-card__title" x-text="$store.i18n.t('skills.sql_t')"></h3>
+              <p class="skill-card__desc" x-text="$store.i18n.t('skills.sql_d')"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="sobre-mi" x-data>
+        <div class="section__head">
+          <p class="eyebrow" x-text="$store.i18n.t('about.eyebrow')"></p>
+        </div>
+        <p class="stack-group__text" style="max-width: 60ch" x-text="$store.i18n.t('about.body')"></p>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="section" id="proyectos" x-data>
+        <div class="section__head">
+          <p class="eyebrow" x-text="$store.i18n.t('projects.eyebrow')"></p>
+          <h2 class="section__title" x-text="$store.i18n.t('projects.title')"></h2>
+        </div>
+
+        <article class="project">
+          <div class="project__head">
+            <span class="project__name">DF NOA</span>
+            <span class="project__meta" x-text="$store.i18n.t('projects.dfnoa_m')"></span>
+          </div>
+          <p class="project__desc" x-text="$store.i18n.t('projects.dfnoa_d')"></p>
+          <div class="project__tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">SQL</span>
+            <span class="tag tag--accent">ARCA/AFIP</span>
+            <span class="tag">SOAP</span>
+            <span class="tag">Legacy</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__head">
+            <span class="project__name">Arcometal</span>
+            <span class="project__meta" x-text="$store.i18n.t('projects.arco_m')"></span>
+          </div>
+          <p class="project__desc" x-text="$store.i18n.t('projects.arco_d')"></p>
+          <div class="project__tags">
+            <span class="tag">Laravel</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Docker Compose</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">HTTPS</span>
+            <span class="tag">VPS / Linux</span>
+            <span class="tag tag--accent">Auth + Recovery</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__head">
+            <span class="project__name">FiscoNexo</span>
+            <span class="project__status" x-text="$store.i18n.t('projects.fisco_s')"></span>
+          </div>
+          <p class="project__desc" x-text="$store.i18n.t('projects.fisco_d')"></p>
+          <div class="project__tags">
+            <span class="tag tag--accent">ARCA/AFIP</span>
+            <span class="tag">API</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Producto propio</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__head">
+            <span class="project__name">BYNINIA Store Pro</span>
+            <span class="project__meta" x-text="$store.i18n.t('projects.byn_m')"></span>
+          </div>
+          <p class="project__desc" x-text="$store.i18n.t('projects.byn_d')"></p>
+          <div class="project__tags">
+            <span class="tag">Next.js 15</span>
+            <span class="tag">React</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">Framer Motion</span>
+            <span class="tag">JSON-LD</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">SEO</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__head">
+            <span class="project__name">Mangata</span>
+            <span class="project__meta" x-text="$store.i18n.t('projects.mangata_m')"></span>
+          </div>
+          <p class="project__desc" x-text="$store.i18n.t('projects.mangata_d')"></p>
+          <div class="project__tags">
+            <span class="tag">E-commerce</span>
+            <span class="tag">Catálogo</span>
+            <span class="tag">SEO local</span>
+            <span class="tag">Instagram</span>
+            <span class="tag">WhatsApp</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section" id="experiencia" x-data>
+        <div class="section__head">
+          <p class="eyebrow" x-text="$store.i18n.t('xp.eyebrow')"></p>
+          <h2 class="section__title" x-text="$store.i18n.t('xp.title')"></h2>
+        </div>
+
+        <div class="xp">
+          <div class="xp__period">Ene 2026 — <span x-text="$store.i18n.t('xp.now')"></span></div>
+          <div>
+            <div class="xp__role" x-text="$store.i18n.t('xp.sinersys_r')"></div>
+            <div class="xp__org" x-text="$store.i18n.t('xp.sinersys_o')"></div>
+            <p class="xp__desc" x-text="$store.i18n.t('xp.sinersys_d')"></p>
+          </div>
+        </div>
+
+        <div class="xp">
+          <div class="xp__period">Nov 2025 — <span x-text="$store.i18n.t('xp.now')"></span></div>
+          <div>
+            <div class="xp__role" x-text="$store.i18n.t('xp.dfnoa_r')"></div>
+            <div class="xp__org" x-text="$store.i18n.t('xp.dfnoa_o')"></div>
+            <p class="xp__desc" x-text="$store.i18n.t('xp.dfnoa_d')"></p>
+          </div>
+        </div>
+
+        <div class="xp">
+          <div class="xp__period">Ene 2025 — <span x-text="$store.i18n.t('xp.now')"></span></div>
+          <div>
+            <div class="xp__role" x-text="$store.i18n.t('xp.eversys_r')"></div>
+            <div class="xp__org" x-text="$store.i18n.t('xp.eversys_o')"></div>
+            <p class="xp__desc" x-text="$store.i18n.t('xp.eversys_d')"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STACK + EDUCATION ============ -->
+      <section class="section" id="stack" x-data>
+        <div class="section__head">
+          <p class="eyebrow" x-text="$store.i18n.t('stack.eyebrow')"></p>
+          <h2 class="section__title" x-text="$store.i18n.t('stack.title')"></h2>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-group__label" x-text="$store.i18n.t('stack.lang')"></div>
+          <div class="stack-group__tags">
+            <span class="tag tag--accent">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">PHP</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-group__label" x-text="$store.i18n.t('stack.data')"></div>
+          <div class="stack-group__tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">APIs</span>
+            <span class="tag">ARCA/AFIP</span>
+            <span class="tag">Migraciones</span>
+            <span class="tag">QA</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-group__label" x-text="$store.i18n.t('stack.front')"></div>
+          <div class="stack-group__tags">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Sass</span>
+            <span class="tag">Alpine.js</span>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <div class="stack-group__label" x-text="$store.i18n.t('stack.infra')"></div>
+          <div class="stack-group__tags">
+            <span class="tag">Git</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">VPS / Linux</span>
+            <span class="tag">Node + PM2</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Android Studio</span>
+          </div>
+        </div>
+
+        <div class="stack-group mt-5">
+          <div class="stack-group__label" x-text="$store.i18n.t('stack.edu')"></div>
+          <p class="stack-group__text" x-text="$store.i18n.t('stack.edu_d')"></p>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section" id="contacto" x-data>
+        <div class="section__head">
+          <p class="eyebrow" x-text="$store.i18n.t('contact.eyebrow')"></p>
+          <h2 class="section__title" x-text="$store.i18n.t('contact.title')"></h2>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-row__label" x-text="$store.i18n.t('contact.email')"></span>
+          <a class="contact-row__value link" href="mailto:ramirorruggeri@gmail.com">ramirorruggeri@gmail.com</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row__label" x-text="$store.i18n.t('contact.linkedin')"></span>
+          <a class="contact-row__value link" href="https://linkedin.com/in/ramiro-ruggeri-a16324224" target="_blank" rel="noopener">in/ramiro-ruggeri ↗</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row__label" x-text="$store.i18n.t('contact.github')"></span>
+          <a class="contact-row__value link" href="https://github.com/Ramiro-Ruggeri" target="_blank" rel="noopener">Ramiro-Ruggeri ↗</a>
+        </div>
+
+        <!-- ===== Contact form (calls /api/contact) ===== -->
+        <form class="contact-form" x-data="contactForm" @submit.prevent="submit" novalidate>
+          <h3 class="skill-card__title" style="margin-bottom: 0.5rem" x-text="$store.i18n.t('contact.form_title')"></h3>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="cf-name" x-text="$store.i18n.t('contact.name')"></label>
+            <input id="cf-name" class="contact-form__input" type="text" x-model="name" required />
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="cf-email" x-text="$store.i18n.t('contact.from')"></label>
+            <input id="cf-email" class="contact-form__input" type="email" x-model="email" required />
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="cf-msg" x-text="$store.i18n.t('contact.message')"></label>
+            <textarea id="cf-msg" class="contact-form__textarea" x-model="message" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-form__submit" :disabled="state === 'sending'" x-text="state === 'sending' ? $store.i18n.t('contact.sending') : $store.i18n.t('contact.send')"></button>
+
+          <p x-show="state === 'ok'" class="contact-form__status contact-form__status--ok" x-text="$store.i18n.t('contact.sent')"></p>
+          <p x-show="state === 'error'" class="contact-form__status contact-form__status--error" x-text="$store.i18n.t('contact.error')"></p>
+        </form>
+      </section>
+
+      <!-- ============ FOOTER ============ -->
+      <footer class="footer">© 2026 Ramiro Ruggeri · ramiroruggeri.tech</footer>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

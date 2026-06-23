@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "eyebrow": "Córdoba, Argentina · Disponible para trabajar",
+    "title_1": "Full Stack · Data · AI Engineer.",
+    "title_2": "AI · LLMs · Backend · Sistemas en producción",
+    "lead": "Backend, SQL e integraciones. LLMs (OpenAI · Anthropic · Gemini), workflows con Claude, Copilot, Cursor. Automatización con n8n + IA. ARCA/AFIP.",
+    "cta": "Contacto",
+    "cv": "Descargar CV ↓",
+    "github": "GitHub ↗"
+  },
+  "skills": {
+    "eyebrow": "Foco principal",
+    "title": "Habilidades de alto valor",
+    "python_t": "Python",
+    "python_d": "Scripting, automatización, procesamiento y limpieza de datos, integración entre sistemas.",
+    "data_t": "Análisis de datos",
+    "data_d": "SQL, modelado, migraciones, limpieza, exportación y validación de datos operativos.",
+    "qa_t": "QA",
+    "qa_d": "Pruebas funcionales, validación post-deploy, control de datos y trazabilidad de procesos.",
+    "sql_t": "SQL / MySQL",
+    "sql_d": "Diseño de tablas, consultas, relaciones, backups y revisión de estructuras legacy."
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "body": "Trabajo en backend, bases de datos e integraciones, con foco en sistemas que ya están operando. Combino desarrollo, análisis de datos y QA. Estudio Desarrollo de Software en ISSD; formación previa en Ciencias de la Computación (FAMAF/UNC)."
+  },
+  "projects": {
+    "eyebrow": "Trabajo seleccionado",
+    "title": "Proyectos",
+    "dfnoa_m": "Cliente · Integración fiscal",
+    "dfnoa_d": "Integración ARCA/AFIP sobre un sistema POS legacy en PHP/MySQL: consulta por CUIT/CUIL, autocompletado de datos fiscales, emisión de CAE, estados de comprobantes (Pendiente, Enviando, Autorizada, Rechazada, Fallida, Reintento pendiente), logs y trazabilidad. Incluyó análisis de la base existente, plan de homologación, manual técnico y preparación para producción.",
+    "arco_m": "Cliente · Plataforma comercial",
+    "arco_d": "Plataforma e-commerce y catálogo con cotizaciones y panel administrativo para Arcometal (empresa metalúrgica de Jujuy). Arquitectura en 4 servicios sobre Docker Compose — Nginx (reverse proxy + HTTPS), aplicación Laravel, MySQL y storage real — con login/logout, recuperación de contraseña, importación limpia de base y archivos, validación de rutas y panel, backups antes y después de cambios críticos, y QA técnico post-deploy.",
+    "fisco_s": "Prototipo · En desarrollo",
+    "fisco_d": "Producto propio: capa de integración fiscal para conectar POS, CRM, e-commerce y sistemas legacy con ARCA/AFIP. Arquitectura modular (Core · Bridge · Monitor · Pro). Tu sistema vende. FiscoNexo factura. Actualmente en etapa de prototipo funcional.",
+    "byn_m": "E-commerce",
+    "byn_d": "Tienda online BYNINIA Store Pro con Next.js 15, React y Tailwind: catálogo, páginas individuales de producto, grid responsive, carrito local, botón flotante de WhatsApp, SEO técnico con JSON-LD, estructura de imágenes optimizada y precios en ARS. Deploy en Vercel.",
+    "mangata_m": "Marca · Indumentaria",
+    "mangata_d": "Presencia digital y catálogo para Mangata, marca de indumentaria. Organización de catálogo, estrategia para Marketplace e Instagram, SEO local, identidad digital y estructura pensada para conversión por canales sociales y WhatsApp."
+  },
+  "xp": {
+    "eyebrow": "Trayectoria",
+    "title": "Experiencia",
+    "now": "Presente",
+    "sinersys_r": "Full Stack / Backend & Product Developer",
+    "sinersys_o": "Sinersys IT · Tucumán, Argentina",
+    "sinersys_d": "Desarrollo de soluciones de software para sistemas de gestión, hotelería, e-commerce, facturación, pagos y automatización de procesos. Stack: React, Next.js, PHP/MySQL, SQL, APIs. Análisis de flujos de datos, estructuras de base, formularios, estados, pagos y procesos operativos reales. Interfaces mobile-first conectadas a backend, datos y reglas de negocio.",
+    "dfnoa_r": "Systems Support / Database & Backend Developer",
+    "dfnoa_o": "DF NOA · Tucumán, Argentina",
+    "dfnoa_d": "Soporte técnico y desarrollo sobre sistemas PHP/MySQL en operación diaria. Inspección, validación y resolución de inconsistencias de datos vía SQL. Integraciones API/SOAP, análisis de requests/responses y estados de error. Participación en flujos de integración fiscal ARCA/AFIP: datos de clientes, estados de comprobantes, trazabilidad y pruebas controladas.",
+    "eversys_r": "Founder / Full Stack & Product Developer",
+    "eversys_o": "EverSys Solutions · Proyecto propio",
+    "eversys_d": "Soluciones web, sistemas internos, e-commerce, automatizaciones y herramientas digitales para PyMEs. Stack según proyecto: React, Next.js, PHP/MySQL, SQL, APIs, Python. Interfaces responsive y mobile-first conectadas a datos y procesos reales. Investigación y desarrollo de productos propios orientados a gestión, automatización, captación de leads e integraciones fiscales."
+  },
+  "stack": {
+    "eyebrow": "Herramientas",
+    "title": "Stack y formación",
+    "lang": "Lenguajes",
+    "data": "Datos & Backend",
+    "front": "Frontend",
+    "infra": "Infra & Tooling",
+    "edu": "Formación",
+    "edu_d": "Desarrollo de Software — ISSD (en curso). Ciencias de la Computación — FAMAF/UNC. Bases: Programación I y II, Python, Java y Programación Móvil (Android Studio)."
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Trabajemos juntos",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "form_title": "O escribime directo",
+    "name": "Nombre",
+    "from": "Tu email",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "sent": "¡Mensaje enviado! Te respondo pronto.",
+    "error": "No se pudo enviar. Probá de nuevo o escribime por email."
+  }
+}

@@ -1,0 +1,49 @@
+// =============================================================
+// 04-MOLECULES / _xp.scss
+// Experience timeline entry
+// =============================================================
+
+.xp {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--c-border);
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 1.5rem;
+
+  &:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  &__period {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--c-text-mute);
+    padding-top: 3px;
+  }
+
+  &__role {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  &__org {
+    font-size: 0.875rem;
+    color: var(--c-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  &__desc {
+    font-size: 0.875rem;
+    color: var(--c-text-dim);
+    margin: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .xp {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

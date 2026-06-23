@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "eyebrow": "Córdoba, Argentina · Open to work",
+    "title_1": "Full Stack · Data · AI Engineer.",
+    "title_2": "AI · LLMs · Backend · Production systems",
+    "lead": "Backend, SQL and integrations. LLMs (OpenAI · Anthropic · Gemini), workflows with Claude, Copilot, Cursor. Automation with n8n + AI. ARCA/AFIP.",
+    "cta": "Contact",
+    "cv": "Download CV ↓",
+    "github": "GitHub ↗"
+  },
+  "skills": {
+    "eyebrow": "Main focus",
+    "title": "High-value skills",
+    "python_t": "Python",
+    "python_d": "Scripting, automation, data processing and cleaning, system-to-system integration.",
+    "data_t": "Data analysis",
+    "data_d": "SQL, modeling, migrations, cleaning, exporting and validation of operational data.",
+    "qa_t": "QA",
+    "qa_d": "Functional testing, post-deploy validation, data control and process traceability.",
+    "sql_t": "SQL / MySQL",
+    "sql_d": "Table design, queries, relations, backups and review of legacy structures."
+  },
+  "about": {
+    "eyebrow": "About",
+    "body": "I work on backend, databases and integrations, focused on systems already in operation. I combine development, data analysis and QA. Studying Software Development at ISSD; prior background in Computer Science (FAMAF/UNC)."
+  },
+  "projects": {
+    "eyebrow": "Selected work",
+    "title": "Projects",
+    "dfnoa_m": "Client · Tax integration",
+    "dfnoa_d": "ARCA/AFIP integration on a legacy PHP/MySQL POS system: lookup by CUIT/CUIL, tax data autocompletion, CAE issuance, voucher states (Pending, Sending, Authorized, Rejected, Failed, Retry pending), logs and traceability. Included analysis of the existing database, homologation plan, technical manual and production readiness.",
+    "arco_m": "Client · Commercial platform",
+    "arco_d": "E-commerce and catalog platform with quotes and an admin panel for Arcometal (a metalworking company in Jujuy). 4-service architecture on Docker Compose — Nginx (reverse proxy + HTTPS), Laravel app, MySQL and real storage — with login/logout, password recovery, clean database and assets import, route and panel validation, backups before and after critical changes, and post-deploy technical QA.",
+    "fisco_s": "Prototype · In progress",
+    "fisco_d": "Own product: a tax-integration layer connecting POS, CRM, e-commerce and legacy systems with ARCA/AFIP. Modular architecture (Core · Bridge · Monitor · Pro). Your system sells. FiscoNexo invoices. Currently at functional-prototype stage.",
+    "byn_m": "E-commerce",
+    "byn_d": "BYNINIA Store Pro online shop with Next.js 15, React and Tailwind: catalog, individual product pages, responsive grid, local cart, floating WhatsApp button, technical SEO with JSON-LD, optimized image structure and ARS pricing. Deployed on Vercel.",
+    "mangata_m": "Brand · Apparel",
+    "mangata_d": "Digital presence and catalog for Mangata, an apparel brand. Catalog organization, Marketplace and Instagram strategy, local SEO, digital identity and a structure designed for conversion through social channels and WhatsApp."
+  },
+  "xp": {
+    "eyebrow": "Track record",
+    "title": "Experience",
+    "now": "Present",
+    "sinersys_r": "Full Stack / Backend & Product Developer",
+    "sinersys_o": "Sinersys IT · Tucumán, Argentina",
+    "sinersys_d": "Building software solutions for management systems, hospitality, e-commerce, billing, payments and process automation. Stack: React, Next.js, PHP/MySQL, SQL, APIs. Analysis of data flows, database structures, forms, states, payments and real operational processes. Mobile-first interfaces connected to backend, data and business rules.",
+    "dfnoa_r": "Systems Support / Database & Backend Developer",
+    "dfnoa_o": "DF NOA · Tucumán, Argentina",
+    "dfnoa_d": "Technical support and development on PHP/MySQL systems in daily operation. Inspection, validation and resolution of data inconsistencies via SQL. API/SOAP integrations, request/response analysis and error states. Contribution to ARCA/AFIP tax integration flows: customer data, voucher states, traceability and controlled testing.",
+    "eversys_r": "Founder / Full Stack & Product Developer",
+    "eversys_o": "EverSys Solutions · Own venture",
+    "eversys_d": "Web solutions, internal systems, e-commerce, automations and digital tools for SMBs. Stack per project: React, Next.js, PHP/MySQL, SQL, APIs, Python. Responsive and mobile-first interfaces connected to real data and processes. Research and development of own products for management, automation, lead generation and tax integrations."
+  },
+  "stack": {
+    "eyebrow": "Tooling",
+    "title": "Stack & education",
+    "lang": "Languages",
+    "data": "Data & Backend",
+    "front": "Frontend",
+    "infra": "Infra & Tooling",
+    "edu": "Education",
+    "edu_d": "Software Development — ISSD (ongoing). Computer Science — FAMAF/UNC. Foundations: Programming I & II, Python, Java and Mobile Programming (Android Studio)."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let''s work together",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "form_title": "Or write me directly",
+    "name": "Name",
+    "from": "Your email",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "sent": "Message sent! I''ll reply soon.",
+    "error": "Couldn''t send. Try again or email me."
+  }
+}

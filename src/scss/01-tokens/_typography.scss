@@ -1,0 +1,26 @@
+// =============================================================
+// 01-TOKENS / _typography.scss
+// =============================================================
+
+$font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+$font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Consolas, monospace;
+
+// fluid type scale
+$fs-display: clamp(2.4rem, 6vw, 4.2rem);
+$fs-h2:      clamp(1.4rem, 3vw, 1.9rem);
+$fs-h3:      1.05rem;
+$fs-body:    1rem;
+$fs-sm:      0.875rem;
+$fs-xs:      0.78rem;
+
+$lh-tight: 1.1;
+$lh-snug:  1.35;
+$lh-body:  1.65;
+
+// expose font families to bootstrap
+$font-family-sans-serif: $font-sans;
+$font-family-monospace:  $font-mono;
+$font-family-base:       $font-sans;
+$font-size-base:         1rem;
+$headings-font-weight:   700;
+$headings-line-height:   $lh-tight;

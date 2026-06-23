@@ -1,0 +1,51 @@
+// =============================================================
+// 04-MOLECULES / _project.scss
+// =============================================================
+
+.project {
+  padding: 2rem 0;
+  border-top: 1px solid var(--c-border);
+
+  &:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  &__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+  }
+
+  &__name {
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  &__meta {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--c-text-mute);
+  }
+
+  &__status {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--c-accent);
+  }
+
+  &__desc {
+    font-size: 0.875rem;
+    color: var(--c-text-dim);
+    margin-bottom: 1rem;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

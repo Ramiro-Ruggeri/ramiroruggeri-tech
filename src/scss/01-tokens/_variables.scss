@@ -1,0 +1,44 @@
+// =============================================================
+// 01-TOKENS / _variables.scss
+// Bootstrap variable overrides + design tokens propios.
+// Se importa ANTES de bootstrap.scss para que tome efecto.
+// =============================================================
+
+// ---- color tokens (dark default) ----
+$c-bg:        #0a0a0b;
+$c-surface:   #151517;
+$c-surface-2: #1c1c1f;
+$c-border:    #26262a;
+$c-text:      #ededed;
+$c-text-dim:  #8a8f98;
+$c-text-mute: #5b5f66;
+$c-accent:    #4f7cff;
+$c-accent-dim:#2e4fa8;
+
+// ---- bootstrap overrides ----
+$body-bg:    $c-bg;
+$body-color: $c-text;
+$primary:    $c-accent;
+$border-color: $c-border;
+$border-radius: 8px;
+$border-radius-sm: 6px;
+$border-radius-lg: 10px;
+
+// ---- spacing tokens (extra, no rompen bootstrap) ----
+$sp-1: 0.25rem;
+$sp-2: 0.5rem;
+$sp-3: 0.75rem;
+$sp-4: 1rem;
+$sp-6: 1.5rem;
+$sp-8: 2rem;
+$sp-12: 3rem;
+$sp-16: 4rem;
+$sp-24: 6rem;
+
+// ---- layout ----
+$maxw: 760px;
+$transition: 160ms ease;
+
+// ---- focus ----
+$focus-ring-color: $c-accent;
+$focus-ring-width: 2px;

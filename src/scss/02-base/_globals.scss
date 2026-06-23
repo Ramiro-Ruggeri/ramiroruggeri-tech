@@ -1,0 +1,50 @@
+// =============================================================
+// 02-BASE / _globals.scss
+// =============================================================
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+body {
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background var(--transition), color var(--transition);
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--c-accent);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+// disable bootstrap's bg-body so our theme vars win
+.bg-body { background: var(--c-bg) !important; }

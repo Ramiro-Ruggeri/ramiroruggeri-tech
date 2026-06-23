@@ -1,0 +1,12 @@
+// =============================================================
+// 06-TEMPLATE / _layout.scss
+// Página shell — container max-width
+// =============================================================
+@use '../01-tokens/variables' as v;
+
+.wrap {
+  width: 100%;
+  max-width: v.$maxw;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}

@@ -1,0 +1,129 @@
+// =============================================================
+// 04-MOLECULES / _stack-group.scss
+// =============================================================
+
+.stack-group {
+  margin-bottom: 1.5rem;
+
+  &__label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--c-text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__text {
+    color: var(--c-text-dim);
+    font-size: 0.875rem;
+    max-width: 58ch;
+  }
+}
+
+// =============================================================
+// 04-MOLECULES / _contact-row.scss
+// =============================================================
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid var(--c-border);
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  &__label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--c-text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__value {
+    font-size: 0.875rem;
+  }
+}
+
+// =============================================================
+// 04-MOLECULES / _contact-form.scss
+// Form for /api/contact
+// =============================================================
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 8px;
+
+  &__field {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  &__label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--c-text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__input,
+  &__textarea {
+    background: var(--c-bg);
+    border: 1px solid var(--c-border);
+    color: var(--c-text);
+    border-radius: 6px;
+    padding: 0.6rem 0.75rem;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    transition: border-color var(--transition);
+
+    &:focus {
+      outline: none;
+      border-color: var(--c-accent);
+    }
+  }
+
+  &__textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  &__submit {
+    justify-self: start;
+    background: var(--c-accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.65rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: opacity var(--transition);
+
+    &:hover { opacity: 0.88; }
+    &:disabled { opacity: 0.5; cursor: not-allowed; }
+  }
+
+  &__status {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--c-text-dim);
+
+    &--ok    { color: #4ade80; }
+    &--error { color: #f87171; }
+  }
+}

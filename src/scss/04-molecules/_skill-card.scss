@@ -1,0 +1,41 @@
+// =============================================================
+// 04-MOLECULES / _skill-card.scss
+// High-value skill card with accent dot
+// =============================================================
+
+.skill-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color var(--transition);
+  height: 100%;
+
+  &:hover {
+    border-color: var(--c-accent-dim);
+  }
+
+  &__title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--c-accent);
+      flex: none;
+    }
+  }
+
+  &__desc {
+    font-size: 0.875rem;
+    color: var(--c-text-dim);
+    margin: 0;
+  }
+}
