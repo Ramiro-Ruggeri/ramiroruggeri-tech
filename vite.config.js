@@ -4,6 +4,20 @@ import { resolve } from 'path';
 export default defineConfig({
   root: 'src',
   publicDir: resolve(__dirname, 'public'),
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+        silenceDeprecations: [
+          'legacy-js-api',
+          'import',
+          'global-builtin',
+          'color-functions',
+          'if-function',
+        ],
+      },
+    },
+  },
   build: {
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
