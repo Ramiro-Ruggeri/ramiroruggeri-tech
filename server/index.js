@@ -30,7 +30,7 @@ app.use(
         defaultSrc: ["'self'"],
         styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
         fontSrc: ["'self'", 'https://fonts.gstatic.com'],
-        scriptSrc: ["'self'", "'unsafe-inline'"],
+        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
         imgSrc: ["'self'", 'data:', 'https:'],
         connectSrc: ["'self'"],
       },
@@ -120,3 +120,4 @@ app.get('*', (_req, res) => {
 app.listen(PORT, () => {
   console.info(`ramiroruggeri.tech running on :${PORT} (env=${process.env.NODE_ENV || 'dev'})`);
 });
+
