@@ -5,7 +5,7 @@
     "title_2": "AI · LLMs · Backend · Production systems",
     "lead": "Backend, SQL and integrations. LLMs (OpenAI · Anthropic · Gemini), workflows with Claude, Copilot, Cursor. Automation with n8n + AI. ARCA/AFIP.",
     "cta": "Contact",
-    "cv": "Download CV ↓",
+    "cv": "LinkedIn ↗",
     "github": "GitHub ↗"
   },
   "skills": {
@@ -74,7 +74,7 @@
     "message": "Message",
     "send": "Send message",
     "sending": "Sending…",
-    "sent": "Message sent! I''ll reply soon.",
-    "error": "Couldn''t send. Try again or email me."
+    "sent": "Message sent! I'll reply soon.",
+    "error": "Couldn't send. Try again or email me."
   }
 }

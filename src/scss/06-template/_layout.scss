@@ -10,3 +10,68 @@
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+.floating-actions {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 40;
+  display: grid;
+  gap: 0.625rem;
+}
+
+.floating-actions__btn {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--c-border);
+  border-radius: 999px;
+  color: var(--c-text);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--c-surface) 92%, transparent), color-mix(in srgb, var(--c-bg) 88%, transparent));
+  box-shadow: 0 14px 38px color-mix(in srgb, #000 18%, transparent);
+  backdrop-filter: blur(12px);
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background var(--transition),
+    opacity var(--transition);
+}
+
+.floating-actions__btn:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--c-accent) 42%, var(--c-border));
+}
+
+.floating-actions__btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.floating-actions__btn--whatsapp {
+  color: var(--c-accent);
+}
+
+.floating-actions__btn--top {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  .wrap {
+    padding: 0 1rem;
+  }
+
+  .floating-actions {
+    right: max(0.75rem, env(safe-area-inset-right));
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+    gap: 0.5rem;
+  }
+
+  .floating-actions__btn {
+    width: 42px;
+    height: 42px;
+  }
+}

@@ -74,22 +74,69 @@
 
       <!-- ============ HERO ============ -->
       <header class="hero" x-data>
-        <div class="hero__top">
-          <img class="hero__photo" src="/foto.jpg" alt="Ramiro Ruggeri" onerror="this.style.display='none'" />
-          <p class="eyebrow" x-text="$store.i18n.t('hero.eyebrow')"></p>
-        </div>
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="hero__top">
+              <img class="hero__photo" src="/foto.jpg" alt="Ramiro Ruggeri" onerror="this.style.display='none'" />
+              <p class="eyebrow" x-text="$store.i18n.t('hero.eyebrow')"></p>
+            </div>
 
-        <h1 class="hero__title">
-          <span x-text="$store.i18n.t('hero.title_1')"></span><br />
-          <span class="accent" x-text="$store.i18n.t('hero.title_2')"></span>
-        </h1>
+            <h1 class="hero__title">
+              <span x-text="$store.i18n.t('hero.title_1')"></span><br />
+              <span class="accent" x-text="$store.i18n.t('hero.title_2')"></span>
+            </h1>
 
-        <p class="hero__lead" x-text="$store.i18n.t('hero.lead')"></p>
+            <p class="hero__lead" x-text="$store.i18n.t('hero.lead')"></p>
 
-        <div class="hero__actions">
-          <a class="hero__cta" href="#contacto" x-text="$store.i18n.t('hero.cta')"></a>
-          <a class="hero__ghost link" href="https://github.com/Ramiro-Ruggeri" target="_blank" rel="noopener" x-text="$store.i18n.t('hero.github')"></a>
-          <a class="hero__ghost link" href="/cv-ramiro-ruggeri.pdf" x-text="$store.i18n.t('hero.cv')"></a>
+            <div class="hero__actions">
+              <a class="hero__cta" href="#contacto" x-text="$store.i18n.t('hero.cta')"></a>
+              <a class="hero__ghost link" href="https://github.com/Ramiro-Ruggeri" target="_blank" rel="noopener" x-text="$store.i18n.t('hero.github')"></a>
+              <a class="hero__ghost link" href="https://linkedin.com/in/ramiro-ruggeri-a16324224" target="_blank" rel="noopener" x-text="$store.i18n.t('hero.cv')"></a>
+            </div>
+          </div>
+
+          <aside class="hero__system" aria-label="Technical system profile">
+            <div class="hero__system-head">
+              <span class="hero__system-dot"></span>
+              <span>engineering.profile</span>
+              <span class="hero__system-state">available</span>
+            </div>
+
+            <div class="hero__status-grid">
+              <div class="hero__status-item">
+                <span>BACKEND</span>
+                <strong>APIs</strong>
+              </div>
+              <div class="hero__status-item">
+                <span>DATA</span>
+                <strong>SQL</strong>
+              </div>
+              <div class="hero__status-item">
+                <span>INTEGRATIONS</span>
+                <strong>ARCA/AFIP</strong>
+              </div>
+              <div class="hero__status-item">
+                <span>DELIVERY</span>
+                <strong>Docker/VPS</strong>
+              </div>
+            </div>
+
+            <div class="hero__terminal" aria-hidden="true">
+              <p><span>$</span> backend.apis <strong>ready</strong></p>
+              <p><span>$</span> mysql.queries <strong>active</strong></p>
+              <p><span>$</span> arca.afip.bridge <strong>mapped</strong></p>
+              <p><span>$</span> docker.vps.deploy <strong>target</strong></p>
+              <p><span>$</span> ai.assisted.workflow <strong>enabled</strong></p>
+            </div>
+
+            <div class="hero__stack-line">
+              <span>PHP</span>
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>Docker</span>
+              <span>APIs</span>
+            </div>
+          </aside>
         </div>
       </header>
 
@@ -368,6 +415,41 @@
 
       <!-- ============ FOOTER ============ -->
       <footer class="footer">© 2026 Ramiro Ruggeri · ramiroruggeri.tech</footer>
+    </div>
+
+    <div
+      class="floating-actions"
+      x-data="{ showTop: false }"
+      x-init="
+        showTop = window.scrollY > 420;
+        window.addEventListener('scroll', () => { showTop = window.scrollY > 420 }, { passive: true });
+      "
+      aria-label="Quick actions"
+    >
+      <a
+        class="floating-actions__btn floating-actions__btn--whatsapp"
+        href="https://wa.me/5493885195631?text=Hola%20Ramiro%2C%20vi%20tu%20portfolio%20y%20quer%C3%ADa%20contactarte."
+        target="_blank"
+        rel="noopener"
+        aria-label="Contactar por WhatsApp"
+        title="WhatsApp"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .16 5.34.16 11.92c0 2.1.55 4.16 1.6 5.98L0 24l6.26-1.64a11.9 11.9 0 0 0 5.82 1.48h.01c6.58 0 11.92-5.34 11.92-11.92 0-3.18-1.24-6.18-3.49-8.44ZM12.09 21.82h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.71.97.99-3.62-.24-.37a9.86 9.86 0 0 1-1.51-5.29c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.44 9.9-9.91 9.9Zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.08-.3-.15-1.26-.46-2.4-1.47a9 9 0 0 1-1.66-2.06c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z" />
+        </svg>
+      </a>
+
+      <button
+        class="floating-actions__btn floating-actions__btn--top"
+        type="button"
+        x-show="showTop"
+        x-transition.opacity.duration.180ms
+        @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        aria-label="Volver arriba"
+        title="Volver arriba"
+      >
+        ↑
+      </button>
     </div>
 
     <script type="module" src="/js/main.js"></script>
