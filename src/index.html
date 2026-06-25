@@ -393,23 +393,56 @@
 
           <div class="contact-form__field">
             <label class="contact-form__label" for="cf-name" x-text="$store.i18n.t('contact.name')"></label>
-            <input id="cf-name" class="contact-form__input" type="text" x-model="name" required />
+            <input
+              id="cf-name"
+              class="contact-form__input"
+              name="name"
+              type="text"
+              x-model.trim="name"
+              :placeholder="$store.i18n.t('contact.name_placeholder')"
+              autocomplete="name"
+              autocapitalize="words"
+              enterkeyhint="next"
+              required
+            />
           </div>
 
           <div class="contact-form__field">
             <label class="contact-form__label" for="cf-email" x-text="$store.i18n.t('contact.from')"></label>
-            <input id="cf-email" class="contact-form__input" type="email" x-model="email" required />
+            <input
+              id="cf-email"
+              class="contact-form__input"
+              name="email"
+              type="email"
+              x-model.trim="email"
+              :placeholder="$store.i18n.t('contact.email_placeholder')"
+              autocomplete="email"
+              inputmode="email"
+              autocapitalize="none"
+              spellcheck="false"
+              enterkeyhint="next"
+              required
+            />
           </div>
 
           <div class="contact-form__field">
             <label class="contact-form__label" for="cf-msg" x-text="$store.i18n.t('contact.message')"></label>
-            <textarea id="cf-msg" class="contact-form__textarea" x-model="message" required></textarea>
+            <textarea
+              id="cf-msg"
+              class="contact-form__textarea"
+              name="message"
+              x-model.trim="message"
+              :placeholder="$store.i18n.t('contact.message_placeholder')"
+              autocomplete="off"
+              maxlength="1200"
+              required
+            ></textarea>
           </div>
 
           <button type="submit" class="contact-form__submit" :disabled="state === 'sending'" x-text="state === 'sending' ? $store.i18n.t('contact.sending') : $store.i18n.t('contact.send')"></button>
 
           <p x-show="state === 'ok'" class="contact-form__status contact-form__status--ok" x-text="$store.i18n.t('contact.sent')"></p>
-          <p x-show="state === 'error'" class="contact-form__status contact-form__status--error" x-text="$store.i18n.t('contact.error')"></p>
+          <p x-show="state === 'error'" class="contact-form__status contact-form__status--error" role="alert" x-text="error || $store.i18n.t('contact.error')"></p>
         </form>
       </section>
 

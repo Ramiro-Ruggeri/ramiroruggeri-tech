@@ -70,11 +70,19 @@
     "github": "GitHub",
     "form_title": "O escribime directo",
     "name": "Nombre",
+    "name_placeholder": "Tu nombre y apellido",
     "from": "Tu email",
+    "email_placeholder": "tu@email.com",
     "message": "Mensaje",
+    "message_placeholder": "Contame brevemente qué necesitás o por qué querés contactarme",
     "send": "Enviar mensaje",
     "sending": "Enviando…",
     "sent": "¡Mensaje enviado! Te respondo pronto.",
-    "error": "No se pudo enviar. Probá de nuevo o escribime por email."
+    "error": "No se pudo enviar. Probá de nuevo o escribime por email.",
+    "validation_name": "Ingresá tu nombre.",
+    "validation_email_required": "Ingresá tu email.",
+    "validation_email_at": "El email debe incluir @.",
+    "validation_email_format": "Ingresá un email válido.",
+    "validation_message": "Escribí un mensaje un poco más completo."
   }
 }

@@ -64,17 +64,25 @@
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Let''s work together",
+    "title": "Let's work together",
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "form_title": "Or write me directly",
     "name": "Name",
+    "name_placeholder": "Your full name",
     "from": "Your email",
+    "email_placeholder": "you@email.com",
     "message": "Message",
+    "message_placeholder": "Briefly tell me what you need or why you want to get in touch",
     "send": "Send message",
     "sending": "Sending…",
     "sent": "Message sent! I'll reply soon.",
-    "error": "Couldn't send. Try again or email me."
+    "error": "Couldn't send. Try again or email me.",
+    "validation_name": "Enter your name.",
+    "validation_email_required": "Enter your email.",
+    "validation_email_at": "Your email must include @.",
+    "validation_email_format": "Enter a valid email.",
+    "validation_message": "Write a slightly more complete message."
   }
 }
