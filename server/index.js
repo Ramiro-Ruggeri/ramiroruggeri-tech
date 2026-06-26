@@ -33,6 +33,7 @@ app.use(
         scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
         imgSrc: ["'self'", 'data:', 'https:'],
         connectSrc: ["'self'"],
+        upgradeInsecureRequests: null,
       },
     },
   })
