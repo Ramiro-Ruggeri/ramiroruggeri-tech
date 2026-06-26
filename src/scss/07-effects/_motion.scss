@@ -1,0 +1,166 @@
+// 07-EFFECTS / _motion.scss
+// Scroll reveal + premium microinteractions.
+
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0) scale(0.985);
+  filter: blur(4px);
+  transition:
+    opacity 640ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 640ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 640ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform, filter;
+}
+
+.reveal--compact {
+  transform: translate3d(0, 10px, 0) scale(0.98);
+  filter: blur(2px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.skill-card,
+.project,
+.stack-group,
+.contact-form,
+.contact-row,
+.hero__system {
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    background-color 220ms ease;
+}
+
+.tag,
+.icon-btn,
+.hero__cta,
+.hero__ghost,
+.contact-form__submit,
+.floating-actions__btn {
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.hero__photo {
+  filter: drop-shadow(0 22px 42px rgba(56, 189, 248, 0.16));
+  animation: portrait-glow 5.5s ease-in-out infinite;
+}
+
+.hero__system {
+  box-shadow:
+    0 18px 70px rgba(15, 23, 42, 0.26),
+    0 0 0 1px rgba(148, 163, 184, 0.08);
+}
+
+.floating-actions__btn--top {
+  transform-origin: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .skill-card:hover,
+  .project:hover,
+  .stack-group:hover,
+  .contact-form:hover {
+    transform: translateY(-4px);
+    border-color: rgba(56, 189, 248, 0.36);
+    box-shadow:
+      0 18px 48px rgba(2, 8, 23, 0.26),
+      0 0 0 1px rgba(56, 189, 248, 0.08);
+  }
+
+  .tag:hover {
+    transform: translateY(-2px);
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 0 10px 24px rgba(2, 8, 23, 0.18);
+  }
+
+  .hero__cta:hover,
+  .contact-form__submit:hover,
+  .floating-actions__btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 14px 34px rgba(2, 8, 23, 0.24),
+      0 0 0 1px rgba(56, 189, 248, 0.12);
+  }
+
+  .hero__ghost:hover,
+  .icon-btn:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.skill-card:active,
+.project:active,
+.stack-group:active,
+.tag:active,
+.hero__cta:active,
+.hero__ghost:active,
+.contact-form__submit:active,
+.floating-actions__btn:active {
+  transform: scale(0.985);
+}
+
+@keyframes portrait-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 22px 42px rgba(56, 189, 248, 0.14));
+  }
+
+  50% {
+    filter: drop-shadow(0 26px 54px rgba(56, 189, 248, 0.24));
+  }
+}
+
+@media (max-width: 720px) {
+  .reveal {
+    transform: translate3d(0, 16px, 0) scale(0.992);
+    filter: blur(3px);
+    transition-duration: 520ms;
+  }
+
+  .reveal--compact {
+    transform: translate3d(0, 8px, 0) scale(0.99);
+  }
+
+  .skill-card:active,
+  .project:active,
+  .stack-group:active {
+    transform: scale(0.992);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal--compact,
+  .hero__photo {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    animation: none;
+    transition: none;
+  }
+
+  .skill-card,
+  .project,
+  .stack-group,
+  .contact-form,
+  .contact-row,
+  .tag,
+  .icon-btn,
+  .hero__cta,
+  .hero__ghost,
+  .contact-form__submit,
+  .floating-actions__btn {
+    transition: none;
+  }
+}

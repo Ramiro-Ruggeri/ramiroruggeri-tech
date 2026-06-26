@@ -1,3 +1,4 @@
+import './scroll-reveal.js';
 // =============================================================
 // src/js/main.js
 // Entry point. Wires Alpine stores + components, imports SCSS,
@@ -21,3 +22,4 @@ Alpine.data('contactForm', contactForm);
 window.Alpine = Alpine;
 
 Alpine.start();
+
